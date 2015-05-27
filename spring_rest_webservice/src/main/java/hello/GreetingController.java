@@ -19,7 +19,7 @@ public class GreetingController {
     
     @RequestMapping("/placesselection")
     public PlacesSelection placesselection(@RequestParam(value="theme", defaultValue="...") String theme) {
-		return new PlacesSelection(counter.incrementAndGet(), theme);
+		return new PlacesSelection(counter.incrementAndGet(), JDBCDataBaseHandling.SelectPlacesByTheme(JDBCDataBaseHandling.connect(),theme));
 	 }
 	 
 }
