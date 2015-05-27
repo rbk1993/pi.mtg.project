@@ -1,0 +1,12 @@
+{
+  "Users": [
+    {
+      "Login": "foo",
+      "Password": "bar"
+    },
+    {
+      "Login": "12345",
+      "Password": "12345"
+    }
+  ]
+}

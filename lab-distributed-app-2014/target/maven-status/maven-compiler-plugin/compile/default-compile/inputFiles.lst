@@ -1,0 +1,14 @@
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/Files.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/controllers/RestApiController.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/controllers/ChatController.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/AuthenticationRequest.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/AuthenticationService.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/MessageBoard.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/AuthenticationResponse.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/DemoApplication.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/model/Post.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/GistResponse.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/Filename.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/MessagesForApi.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/GistRequest.java
+/home/invite/MID/lab-distributed-app-2014-done/lab-distributed-app-2014/src/main/java/fr/insalyon/telecom/chat/services/GistService.java

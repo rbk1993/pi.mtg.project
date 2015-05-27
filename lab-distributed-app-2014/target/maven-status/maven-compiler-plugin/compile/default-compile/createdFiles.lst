@@ -1,0 +1,14 @@
+fr/insalyon/telecom/chat/controllers/ChatController.class
+fr/insalyon/telecom/chat/services/GistService.class
+fr/insalyon/telecom/chat/services/Filename.class
+fr/insalyon/telecom/chat/services/GistResponse.class
+fr/insalyon/telecom/chat/model/Post.class
+fr/insalyon/telecom/chat/controllers/RestApiController.class
+fr/insalyon/telecom/chat/services/MessagesForApi.class
+fr/insalyon/telecom/chat/services/AuthenticationService.class
+fr/insalyon/telecom/chat/services/Files.class
+fr/insalyon/telecom/chat/DemoApplication.class
+fr/insalyon/telecom/chat/services/GistRequest.class
+fr/insalyon/telecom/chat/services/AuthenticationResponse.class
+fr/insalyon/telecom/chat/services/MessageBoard.class
+fr/insalyon/telecom/chat/services/AuthenticationRequest.class
