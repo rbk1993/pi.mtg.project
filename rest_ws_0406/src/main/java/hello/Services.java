@@ -101,7 +101,7 @@ public class Services {
 			      stmt = connection.createStatement();
 			      rs = stmt.executeQuery(Query);  
 			  
-			      JSONArray jsonArraySample = MinorServices.convertToJSON(rs);
+			      JSONArray jsonArraySample = MinorServices.resultSetToJSON(rs);
 			      
 			      System.out.println(jsonArraySample.toString());  
 			      
@@ -239,7 +239,7 @@ public class Services {
 			      if(total_rows == true) {
 			    	  userID = rs.getInt("user_id");
 			      } 
-			      JSONArray jsonArraySample = MinorServices.convertToJSON(rs);
+			      JSONArray jsonArraySample = MinorServices.resultSetToJSON(rs);
 
 			      System.out.println(jsonArraySample);
 			      

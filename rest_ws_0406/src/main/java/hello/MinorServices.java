@@ -23,7 +23,7 @@ public class MinorServices {
      * @return a JSONArray
      * @throws Exception
      */
-    public static JSONArray convertToJSON(ResultSet resultSet)
+    public static JSONArray resultSetToJSON(ResultSet resultSet)
             throws Exception {
         JSONArray jsonArray = new JSONArray();
         
