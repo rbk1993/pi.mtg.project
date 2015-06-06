@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mar 02 Juin 2015 à 09:10
+-- Généré le :  Sam 06 Juin 2015 à 18:18
 -- Version du serveur :  5.6.24
 -- Version de PHP :  5.6.8
 
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `Groupe` (
   `horaire` time(4) NOT NULL,
   `nombre_membres_max` int(255) NOT NULL,
   `id_lieu_rencontre` int(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=126 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `Groupe`
@@ -65,7 +65,23 @@ INSERT INTO `Groupe` (`group_id`, `id_administrateur`, `duree_parcours_heures`, 
 (1, 1, 2, 30, '2015-07-18', '13:20:00.0000', 10, 1),
 (2, 2, 3, 15, '2015-07-20', '12:00:00.0000', 5, 5),
 (3, 3, 4, 30, '2015-08-01', '16:00:00.0000', 15, 4),
-(109, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5);
+(109, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(110, 1, 5, 10, '2015-10-09', '20:00:00.0000', 20, 1),
+(111, 1, 5, 10, '2016-10-09', '20:00:00.0000', 20, 1),
+(112, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(113, 1, 5, 10, '2015-10-09', '20:00:00.0000', 20, 1),
+(114, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(115, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(116, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(117, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(118, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(119, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(120, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(121, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(122, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(123, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(124, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5),
+(125, 99, 3, 30, '2015-09-01', '19:22:00.0000', 50, 5);
 
 -- --------------------------------------------------------
 
@@ -171,7 +187,23 @@ INSERT INTO `Membres_Groupes` (`user_id`, `group_id`) VALUES
 (13, 2),
 (99, 107),
 (99, 108),
-(99, 109);
+(99, 109),
+(1, 1),
+(1, 1),
+(99, 112),
+(1, 113),
+(99, 114),
+(99, 115),
+(99, 116),
+(99, 117),
+(99, 118),
+(99, 119),
+(99, 120),
+(99, 121),
+(99, 122),
+(99, 123),
+(99, 124),
+(99, 125);
 
 -- --------------------------------------------------------
 
@@ -195,18 +227,19 @@ CREATE TABLE IF NOT EXISTS `Theme` (
   `ville_associée` varchar(255) NOT NULL,
   `nom_theme` varchar(255) NOT NULL,
   `photo_theme` varchar(255) NOT NULL,
-  `description` longtext NOT NULL
+  `description` longtext NOT NULL,
+  `available` tinyint(1) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `Theme`
 --
 
-INSERT INTO `Theme` (`id_theme`, `ville_associée`, `nom_theme`, `photo_theme`, `description`) VALUES
-(1, 'Lyon', 'culture', '', 'Regroupe les différents lieux et événements culturels à Lyon (Musées, Sites Historiques, Expositions, Monuments Historiques ...).'),
-(3, 'Lyon', 'nature', '', 'Regroupe les lieux et événements destinés aux amoureux de la nature (Parcs, Restaurants Bio, Produits du terroir, ...).'),
-(4, 'Lyon', 'gastronomie', '', 'Regroupe les différents lieux et événements destinés aux amoureux de la gastronomie (Restaurants, Brasseries, Dégustations ...).'),
-(5, 'Lyon', 'amusement', '', 'Regroupe l''ensemble des lieux et événéments où vous pouvez vous amuser (Parcs à thème, Kartings, Bowlings, Patinoires, Pubs avec Billard...)');
+INSERT INTO `Theme` (`id_theme`, `ville_associée`, `nom_theme`, `photo_theme`, `description`, `available`) VALUES
+(1, 'Lyon', 'culture', '1.jpeg', 'Regroupe les différents lieux et événements culturels à Lyon (Musées, Sites Historiques, Expositions, Monuments Historiques ...).', 1),
+(3, 'Lyon', 'nature', '3.jpeg', 'Regroupe les lieux et événements destinés aux amoureux de la nature (Parcs, Restaurants Bio, Produits du terroir, ...).', 1),
+(4, 'Lyon', 'gastronomie', '4.jpeg', 'Regroupe les différents lieux et événements destinés aux amoureux de la gastronomie (Restaurants, Brasseries, Dégustations ...).', 1),
+(5, 'Lyon', 'amusement', '5.jpeg', 'Regroupe l''ensemble des lieux et événéments où vous pouvez vous amuser (Parcs à thème, Kartings, Bowlings, Patinoires, Pubs avec Billard...)', 0);
 
 -- --------------------------------------------------------
 
@@ -221,27 +254,29 @@ CREATE TABLE IF NOT EXISTS `Utilisateur` (
   `date_naissance` date NOT NULL,
   `login` varchar(255) CHARACTER SET utf8 NOT NULL,
   `mail` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `password` varchar(255) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1 COMMENT='Table enregistrant les utilisateurs de l''application';
+  `password` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `telephone` bigint(20) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1 COMMENT='Table enregistrant les utilisateurs de l''application';
 
 --
 -- Contenu de la table `Utilisateur`
 --
 
-INSERT INTO `Utilisateur` (`user_id`, `prenom`, `nom`, `date_naissance`, `login`, `mail`, `password`) VALUES
-(1, 'Reda', 'Benkirane', '1993-05-06', 'rbk1993', 'reda.benkirane@hotmail.fr', '12345'),
-(2, 'root', 'root', '2015-06-02', 'root', 'root@root.com', 'root'),
-(3, 'test1', 'test1', '2015-06-02', 'test1', 'test1@test.com', 'test1'),
-(10, 'test0', 'test0', '2015-06-02', 'test0', 'test0@test.com', 'test0'),
-(11, 'test2', 'test2', '2015-06-02', 'test2', 'test2@test.com', 'test2'),
-(12, 'test3', 'test3', '2015-06-02', 'test3', 'test3@test.com', 'test3'),
-(13, 'test4', 'test4', '2015-06-02', 'test4', 'test4@test.com', 'test4'),
-(14, 'test5', 'test5', '2015-06-02', 'test5', 'test5@test.com', 'test5'),
-(15, 'test6', 'test6', '2015-06-02', 'test6', 'test6@test.com', 'test6'),
-(16, 'test7', 'test7', '2015-06-02', 'test7', 'test7@test.com', 'test7'),
-(17, 'test8', 'test8', '2015-06-02', 'test8', 'test8@test.com', 'test8'),
-(18, 'test9', 'test9', '2015-06-02', 'test9', 'test9@test.com', 'test9'),
-(19, 'test10', 'test10', '2015-06-02', 'test10', 'test10@test.com', 'test10');
+INSERT INTO `Utilisateur` (`user_id`, `prenom`, `nom`, `date_naissance`, `login`, `mail`, `password`, `telephone`) VALUES
+(1, 'Reda', 'Benkirane', '1993-05-06', 'rbk1993', 'reda.benkirane@hotmail.fr', '12345', 0),
+(2, 'root', 'root', '2015-06-02', 'root', 'root@root.com', 'root', 0),
+(3, 'test1', 'test1', '2015-06-02', 'test1', 'test1@test.com', 'test1', 0),
+(10, 'test0', 'test0', '2015-06-02', 'test0', 'test0@test.com', 'test0', 0),
+(11, 'test2', 'test2', '2015-06-02', 'test2', 'test2@test.com', 'test2', 0),
+(12, 'test3', 'test3', '2015-06-02', 'test3', 'test3@test.com', 'test3', 0),
+(13, 'test4', 'test4', '2015-06-02', 'test4', 'test4@test.com', 'test4', 0),
+(14, 'test5', 'test5', '2015-06-02', 'test5', 'test5@test.com', 'test5', 0),
+(15, 'test6', 'test6', '2015-06-02', 'test6', 'test6@test.com', 'test6', 0),
+(16, 'test7', 'test7', '2015-06-02', 'test7', 'test7@test.com', 'test7', 0),
+(17, 'test8', 'test8', '2015-06-02', 'test8', 'test8@test.com', 'test8', 0),
+(18, 'test9', 'test9', '2015-06-02', 'test9', 'test9@test.com', 'test9', 0),
+(19, 'test10', 'test10', '2015-06-02', 'test10', 'test10@test.com', 'test10', 0),
+(20, 'blabla', 'blabla', '1991-05-02', 'blabla', 'blabla@blabla.fr', 'blabla', 10101010101);
 
 --
 -- Index pour les tables exportées
@@ -293,7 +328,7 @@ ALTER TABLE `Administrateur_Ville`
 -- AUTO_INCREMENT pour la table `Groupe`
 --
 ALTER TABLE `Groupe`
-  MODIFY `group_id` int(255) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=110;
+  MODIFY `group_id` int(255) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=126;
 --
 -- AUTO_INCREMENT pour la table `Lieu`
 --
@@ -308,7 +343,7 @@ ALTER TABLE `Theme`
 -- AUTO_INCREMENT pour la table `Utilisateur`
 --
 ALTER TABLE `Utilisateur`
-  MODIFY `user_id` int(255) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
+  MODIFY `user_id` int(255) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
