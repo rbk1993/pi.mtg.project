@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">My Application</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_select">SelectActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main_page">MainPageActivity</string>
+    <string name="title_activity_theme">ThemeActivity</string>
+    <string name="title_activity_road_gen">RoadGenActivity</string>
+    <string name="title_activity_road">RoadActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_search_group">SearchGroupActivity</string>
+    <string name="title_activity_show_profile">ShowProfileActivity</string>
+    <string name="title_activity_my_groups">MyGroupsActivity</string>
+    <string name="title_activity_create_group">CreateGroupActivity</string>
+    <string name="title_activity_show_group">ShowGroupActivity</string>
 </resources>

@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" tools:context="example.com.begrouped.CreateGroupFragment"
+    android:id="@+id/create"
+    android:weightSum="100">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/container_toolbar"
+            android:layout_weight="12.61"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewNewGroup"
+                android:layout_alignParentTop="true"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:textSize="45dp"
+                android:text="Nouveau Groupe"
+                android:textColor="#ff000000"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextGroupName"
+                android:singleLine="true"
+                android:hint="Group Name"
+                android:layout_gravity="center"
+                android:minWidth="200dp"
+                android:digits="_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/duree"
+                android:hint="Durée Parcours"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:hint="Date   jj/mm/aaaa"
+
+                android:id="@+id/date"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/horaire"
+                android:hint="Horaire"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:hint="Nombre max des membres"
+
+                android:id="@+id/NombreMax"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/prdv"
+                android:hint="Point de RDV"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:id="@+id/annulergroupe"
+                android:layout_margin="10dp"
+                android:layout_weight="45"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"></LinearLayout>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Créer Parcours"
+                android:id="@+id/addparcours"
+                android:layout_weight="45"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
