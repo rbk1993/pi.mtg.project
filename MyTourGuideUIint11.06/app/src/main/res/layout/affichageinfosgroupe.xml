@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6ebee"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color4"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/Informations"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="205dp">
+
+                        <TextView
+                            android:id="@+id/titre"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="GroupName"
+                            android:layout_alignTop="@+id/thumbnail"
+                            android:layout_toRightOf="@+id/thumbnail"
+                            android:textColor="#424242"
+                            android:typeface="sans"
+                            android:textSize="17dip"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/description"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:textColor="#424242"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/titre"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Horaire"
+                            android:textColor="#424242"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/description"
+                            android:layout_alignLeft="@+id/description"
+                            android:layout_alignStart="@+id/description"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Point de RDV"
+                            android:textColor="#424242"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/textView"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Durée"
+                            android:textColor="#424242"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/textView"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre max de personnes "
+                            android:textColor="#424242"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:layout_alignBaseline="@+id/textView3"
+                            android:layout_alignBottom="@+id/textView3"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Membres"
+                            android:textColor="#424242"
+                            android:textSize="14dip"
+                            android:textStyle="bold"
+                            android:layout_alignBaseline="@+id/textView3"
+                            android:layout_alignBottom="@+id/textView3"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp" />
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="217dp"
+                        android:id="@+id/listView3"
+                        android:layout_gravity="center_horizontal" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:weightSum="1">
+
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Précédent"
+                            android:id="@+id/button"
+                            android:layout_marginLeft="15dp"
+                            android:background="@color/color4" />
+
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rejoindre "
+                            android:id="@+id/button3"
+                            android:layout_marginLeft="150dp"
+                            android:background="@color/color4"
+                            android:layout_weight="0.09" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Programme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.79"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Mur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:id="@+id/listView"
+                        android:layout_gravity="center_horizontal" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:hint="Nouveau message"
+                            android:id="@+id/textView20"
+                            android:layout_weight="0.92"
+                            android:background="#ffffffff"
+                            android:layout_marginLeft="10dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Envoyer"
+                            android:id="@+id/button2"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/color4"
+                            android:layout_marginTop="30dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

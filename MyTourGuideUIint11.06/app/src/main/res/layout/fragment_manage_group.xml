@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="pi.mytourguide.activity.ManageGroupFragment"
+    android:background="#e6ebee">
+
+    <LinearLayout
+    android:id="@+id/espace"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="2dp">
+    </LinearLayout>
+
+    <ListView android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+</LinearLayout>

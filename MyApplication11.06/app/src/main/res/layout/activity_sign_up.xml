@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/lyon81flou"
+    android:weightSum="100"
+    tools:context="com.example.invite.myapplication.activities.SignUpActivity">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="45dp"
+            android:text="Inscription"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFFFF">
+            <requestFocus />
+        </TextView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Prénom"
+        android:ems="10"
+        android:id="@+id/editText_Prenom" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nom"
+        android:layout_toRightOf="@id/editText_Prenom"
+        android:ems="10"
+        android:id="@+id/editText_Nom"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Numéro_de_téléphone"
+        android:ems="10"
+        android:id="@+id/editText_phone"
+        android:layout_below="@+id/editText_Nom" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <NumberPicker
+            android:id="@+id/numberPicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <NumberPicker
+            android:id="@+id/numberPicker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/numberPicker1"/>
+        <NumberPicker
+            android:id="@+id/numberPicker3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/numberPicker2"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_login"
+        android:hint="Pseudo                                 "
+        android:layout_toRightOf="@+id/editText_phone"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText_mail"
+        android:hint="Adresse e-mail"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText_mailc"
+        android:hint="Confirmer votre mail"
+        android:layout_toRightOf="@+id/editText_mail"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Mot de passe"
+        android:ems="10"
+        android:id="@+id/editText_password"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Confirmez votre mot de passe"
+        android:ems="10"
+        android:id="@+id/editText_password_c"
+        android:layout_toRightOf="@+id/editText_password"/>
+     </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscription"
+        android:id="@+id/button_signup"
+        android:layout_below="@+id/numberPicker1"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

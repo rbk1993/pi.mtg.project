@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >  
+    <item
+        android:drawable="@drawable/button_gplus_bg1"
+        android:id="@+id/t_bg" />
+    <item 
+        android:top="0dp" android:left="3dp">
+        <bitmap android:src="@drawable/ic_action_shuffle"
+          android:gravity="left" />
+    </item>      
+</layer-list>
+

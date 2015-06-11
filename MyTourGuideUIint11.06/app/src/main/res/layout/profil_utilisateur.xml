@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color4"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/User"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#e6ebee">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="189dp"
+                        android:id="@+id/imageView6"
+                        android:src="@drawable/profileicon" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBar"
+                            android:layout_marginLeft="75dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="271dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Username"
+                            android:id="@+id/textView12"
+                            android:textColor="#ff000000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nom"
+                            android:id="@+id/textView13"
+                            android:layout_marginTop="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Prénom"
+                            android:id="@+id/textView14"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Age"
+                            android:id="@+id/textView15"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Téléphone"
+                            android:id="@+id/textView16"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Email"
+                            android:id="@+id/textView17"
+                            android:layout_marginTop="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Avis"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:background="#e6ebee">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="301dp"
+                        android:id="@+id/listView2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.81" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="87dp"
+                        android:layout_gravity="center_horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:hint="Nouveau message"
+                            android:id="@+id/textView18"
+                            android:layout_weight="0.92"
+                            android:background="#ffffffff"
+                            android:layout_marginLeft="10dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Envoyer"
+                            android:id="@+id/envoyer_avis"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/color4"
+                            android:layout_marginTop="30dp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingBar2"
+                        android:layout_marginLeft="75dp" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

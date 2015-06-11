@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="pi.mytourguide.adapter.AddDestinationFragment"
+    android:background="#e6ebee">
+
+    <EditText
+        android:id="@+id/search_input"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/navigationBarColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:lines="1"
+        android:inputType="text"
+        android:maxLines="1"
+        android:imeOptions="actionSearch"
+        android:scrollHorizontally="true"
+        android:gravity="left"
+        android:textSize="20dp"
+        android:hint="Search a Destination"
+        android:textStyle="normal" />
+
+    <ListView android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_input"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+</RelativeLayout>

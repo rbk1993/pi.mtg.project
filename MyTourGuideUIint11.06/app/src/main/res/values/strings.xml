@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">MyTourGuide</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <!-- navigation drawer item labels  -->
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_parcours">Parcours</string>
+    <string name="nav_item_cotourisme">Cotourisme</string>
+    <string name="nav_item_show_group">Afficher Groupes</string>
+    <string name="nav_item_create_group">Créer un Groupe</string>
+
+    <string name="nav_item_logout">Log Out</string>
+
+
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_parcours</item>
+        <item>@string/nav_item_cotourisme</item>
+        <item>@string/nav_item_show_group</item>
+        <item>@string/nav_item_create_group</item>
+
+
+
+    </string-array>
+
+    <string name="title_home">Home</string>
+    <string name="title_join_group">Join Group</string>
+    <string name="title_create_group">Create Group</string>
+    <string name="title_manage_group">Manage Group</string>
+    <string name="title_about">About</string>
+    <string name="title_help">Help</string>
+    <string name="title_logout">Log out</string>
+    <string name="title_cotourisme">Cotourisme</string>
+    <string name="title_parcours">Parcours Personnalisé</string>
+    <string name="title_groupe">Show Groups</string>
+    <!-- Second Menudrawer Map -->
+    <string name="nav_item_home_map">Home</string>
+    <string name="nav_item_add_appointment">Add/remove Appointment</string>
+    <string name="nav_item_path_to_appointment">Path to Appointment</string>
+    <string name="nav_item_find_program_itinerary">Show/hide Program Itinerary</string>
+    <string name="nav_item_show_program">Show Progam</string>
+    <string name="nav_item_hide_program">Hide Progam</string>
+    <string name="nav_item_current_group">Current Group</string>
+    <string name="nav_item_log_out">Log Out</string>
+
+    <string-array name="nav_drawer_labels_map">
+        <item>@string/nav_item_home_map</item>
+        <item>@string/nav_item_add_appointment</item>
+        <item>@string/nav_item_path_to_appointment</item>
+        <item>@string/nav_item_find_program_itinerary</item>
+        <item>@string/nav_item_show_program</item>
+        <item>@string/nav_item_hide_program</item>
+        <item>@string/nav_item_current_group</item>
+        <item>@string/nav_item_log_out</item>
+    </string-array>
+
+    <string name="title_home_map">Map</string>
+    <string name="title_add_appointment">Add/remove Appointment</string>
+    <string name="title_path_to_appointment">Path to Appointment</string>
+    <string name="title_find_program_itinerary">Show/hide Program Itinerary</string>
+    <string name="title_show_program">Show Program</string>
+    <string name="title_hide_program">Hide Program</string>
+    <string name="title_current_group">Current Group</string>
+    <string name="title_current_log_out">Log Out</string>
+
+
+    <!-- Menu Group Home-->
+    <string name="nav_item_home_global">Home</string>
+    <string name="nav_item_home_current_group">Current Group</string>
+    <string name="nav_item_map">Map</string>
+    <string name="nav_item_members">Members</string>
+    <string name="nav_item_chat">Chat</string>
+    <string name="nav_item_schedule">Schedule</string>
+
+    <string-array name="nav_drawer_labels_group_home">
+        <item>@string/nav_item_home_global</item>
+        <item>@string/nav_item_home_current_group</item>
+        <item>@string/nav_item_map</item>
+        <item>@string/nav_item_members</item>
+        <item>@string/nav_item_chat</item>
+        <item>@string/nav_item_schedule</item>
+        <item>@string/nav_item_log_out</item>
+    </string-array>
+
+
+    <!-- fin menu Group Home -->
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_show_location">ShowLocationActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+    <string name="message_elipses">Message...</string>
+
+
+</resources>
