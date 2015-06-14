@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.invite.myapplication.activities.LoginActivity"
+    android:background="@drawable/welcomelyon1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:touchscreenBlocksFocus="false"
+        android:weightSum="100"
+       >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20.65"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="177dp"
+                android:layout_height="97dp"
+                android:id="@+id/imageView3"
+                android:layout_gravity="center_horizontal|bottom"
+                android:src="@drawable/logomtg" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:gravity="center_horizontal|top"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Username"
+                android:textColorHint="@color/background_holo_light"
+                android:textColor="@color/blueshades_1"
+                android:ems="10"
+                android:singleLine="true"
+                android:id="@+id/editTextId"
+                android:layout_marginTop="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:digits="_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:singleLine="true"
+                android:textColorHint="@color/background_holo_light"
+                android:id="@+id/editTextPassword"
+                android:textColor="@color/blueshades_1"
+                android:hint="Password"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/editTextId"
+                android:layout_alignLeft="@+id/editTextId"
+                android:layout_alignStart="@+id/editTextId" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_weight="10">
+
+               <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="3dp"
+                android:text="Connexion"
+                android:background="@color/blueshades_3"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                   android:gravity="center"
+                   android:textColor="#FFFFFF"/>
+
+            <Button
+               android:id="@+id/buttonRegister"
+               android:layout_width="130dp"
+               android:layout_height="40dp"
+               android:layout_margin="4dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="3dp"
+                android:text="Inscription"
+               android:background="@color/blueshades_3"
+               android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:gravity="center"
+                android:textColor="#FFFFFF"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

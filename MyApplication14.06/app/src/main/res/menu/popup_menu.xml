@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/one"
+        android:title="Point de départ ?"/>
+
+    <item
+        android:id="@+id/two"
+        android:title="Point d'arrivée ?"/>
+
+    <item
+        android:id="@+id/three"
+        android:title="Supprimer ?"/>
+
+</menu> 

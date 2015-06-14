@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.invite.myapplication.frags.SearchGroupFragment"
+    android:background="#e6ebee">
+
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color4"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/Groupes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:background="@drawable/lyon3flou">
+
+                    <ListView android:id="@+id/listViewGroupe"
+                        android:layout_width="fill_parent"
+                        android:layout_height="136dp"
+                        android:divider="@color/blueshades_2"
+                        android:dividerHeight="1dp"
+                        android:layout_weight="0.96"
+                        android:choiceMode="singleChoice"
+                        android:listSelector="@drawable/list_selector2"
+                        android:backgroundTint="@color/blueshades_1"/>
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Filtre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/lyon3flou">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/scrollView3"
+                        android:fillViewport="false">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:weightSum="1">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Afficher les groupes complets"
+                                android:id="@+id/checkBox" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:id="@+id/date"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1.04">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:text="Date : Min"
+                                            android:id="@+id/textView8" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:text="Max"
+                                            android:id="@+id/textView9"
+                                            android:layout_marginRight="0dp"
+                                            android:layout_marginLeft="155dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="191dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:weightSum="1"
+                                        >
+
+                                        <NumberPicker
+                                            android:layout_width="47dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker11" />
+
+                                        <NumberPicker
+                                            android:layout_width="44dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker12" />
+
+                                        <NumberPicker
+                                            android:layout_width="54dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker13"
+                                            android:layout_marginRight="50dp" />
+
+                                        <NumberPicker
+                                            android:layout_width="47dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker15" >
+
+                                        </NumberPicker>
+
+                                        <NumberPicker
+                                            android:layout_width="44dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker17" >
+
+                                        </NumberPicker>
+
+                                        <NumberPicker
+                                            android:layout_width="54dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker19" >
+
+                                        </NumberPicker>
+
+                                    </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="1"
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/horaire"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="7dp">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:text="Horaire : Min"
+                                            android:id="@+id/textView10" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:text="Max"
+                                            android:id="@+id/textView11"
+                                            android:layout_marginRight="0dp"
+                                            android:layout_marginLeft="155dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="200dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:weightSum="1">
+
+                                        <NumberPicker
+                                            android:layout_width="47dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker21" >
+
+                                        </NumberPicker>
+
+                                        <NumberPicker
+                                            android:layout_width="44dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker33"
+                                            android:layout_marginRight="100dp">
+
+                                        </NumberPicker>
+
+                                        <NumberPicker
+                                            android:layout_width="47dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker29" >
+
+                                        </NumberPicker>
+
+                                        <NumberPicker
+                                            android:layout_width="54dp"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/numberPicker23"
+                                            android:layout_marginRight="130dp"
+                                            android:layout_weight="0.06">
+
+                                        </NumberPicker>
+
+                                    </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="Durée max"
+                                    android:id="@+id/textViewDM" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/durée"
+                                android:layout_marginLeft="7dp">
+
+                                    <NumberPicker
+                                        android:layout_width="56dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/numberPicker14" />
+
+                                    <NumberPicker
+                                        android:layout_width="58dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/numberPicker16" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

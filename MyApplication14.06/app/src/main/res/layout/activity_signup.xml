@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.example.invite.myapplication.activities.CreateGroupActivity.SignActivity"
+    android:background="@drawable/welcomelyon2"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="200"
+        android:layout_weight="12.52"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/blueshades_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="45dp"
+            android:text="Inscription"
+            android:textStyle="bold"
+            android:layout_gravity="center">
+        <requestFocus />
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="79.81"
+        android:padding="20dp"
+        >
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:layout_weight="298.19">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="356dp">
+
+                <EditText
+                    android:id="@+id/prenom"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/background_holo_light"
+                    android:textColor="@color/blueshades_2"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="Prénom"
+                    android:inputType="textPersonName"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/nom"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/background_holo_light"
+                    android:textColor="@color/blueshades_2"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="Nom"
+                    android:inputType="textPersonName"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz " />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Date de naissance"
+                        android:id="@+id/datedenaissance"
+                        android:textColor="@color/background_holo_light"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="0dp" />
+
+                    <NumberPicker
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/numberPicker"
+                        android:orientation="vertical" />
+
+                    <NumberPicker
+                        android:layout_width="49dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/numberPicker2"
+                        android:orientation="vertical" />
+
+                    <NumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/numberPicker3"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/background_holo_light"
+                    android:textColor="@color/blueshades_2"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="Identifiant"
+                    android:inputType="textPersonName"
+                    android:digits="_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blueshades_2"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:textColorHint="@color/background_holo_light"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/ConfirmPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blueshades_2"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:textColorHint="@color/background_holo_light"
+                    android:hint="Confirmz votre Password"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/blueshades_2"
+                    android:singleLine="true"
+                    android:ems="10"
+                    android:textColorHint="@color/background_holo_light"
+                    android:hint="Email"
+                    android:id="@+id/email"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/blueshades_2"
+                    android:singleLine="true"
+                    android:ems="10"
+                    android:textColorHint="@color/background_holo_light"
+                    android:hint="Confirmez votre Email"
+                    android:id="@+id/ConfirmEmail"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/phonenumber"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blueshades_2"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:textColorHint="@color/background_holo_light"
+                    android:hint="Téléphone utilisé à Lyon"
+                    android:inputType="number"
+                    android:digits="1234567890"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/button_validate"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            style="@style/Button"
+            android:paddingBottom="10dp"
+            android:paddingTop="3dp"
+            android:text="Terminer"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:background="#ff127ca8" />
+
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            style="@style/Button"
+            android:background="#ff127ca8"
+            android:paddingBottom="10dp"
+            android:paddingTop="3dp"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="Annuler" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
