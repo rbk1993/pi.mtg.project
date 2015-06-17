@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">My Tour Guide</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">My Tour Guide : Home</string>
+
+    <!-- added for sliding menu -->
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <string name="API_KEY_MAPS">AIzaSyABFa6JvSOJzoKABFgehvYVS8ArbL2Agu4</string>
+    <string name="API_KEY_DIR">AIzaSyDoP4aHve8wYZyeR18G1NMr6KWOhS3dXRo</string>
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >My home</item>
+        <item >Profil</item>
+        <item >Creer un parcours</item>
+        <item >Trouver un groupe</item>
+        <item> Mes groupes</item>
+        <item >Utilisateurs</item>
+        <item >Déconnexion</item>
+        <item >A propos</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_boy</item>
+        <item>@drawable/ic_gps</item>
+        <item>@drawable/ic_groupe</item>
+        <item>@drawable/ic_mygroups</item>
+        <item>@drawable/ic_search</item>
+        <item>@drawable/ic_exit</item>
+        <item>@drawable/ic_about</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_create_group">CreateGroupActivity</string>
+    <string name="title_activity_search_group">SearchGroupActivity</string>
+    <string name="title_activity_show_group">ShowGroupActivity</string>
+
+</resources>

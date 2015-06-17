@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.invite.myapplication.activity.MapActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/scrollView_maps"
+         android:fillViewport="false"> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/searchInput"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchInput"
+            android:textColor="@color/blueshades_1"
+            android:maxLines="1"
+            android:hint="Recherche par nom ou type ..."
+            android:textColorHint="@color/blue_perso"
+            android:layout_alignParentTop="true" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@android:id/list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/map"
+            android:layout_above="@+id/button_genererparcours"
+            android:layout_alignParentRight="false" />
+        <!-- android:id="@android:id/list" -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Génerer Parcours"
+            android:id="@+id/button_genererparcours"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creer Groupe"
+            android:id="@+id/button_creergroupe"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
