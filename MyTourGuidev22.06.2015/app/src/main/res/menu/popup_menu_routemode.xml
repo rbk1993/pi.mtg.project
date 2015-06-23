@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/one"
+        android:title="Piéton"/>
+
+    <item
+        android:id="@+id/two"
+        android:title="Vélo"/>
+
+    <item
+        android:id="@+id/three"
+        android:title="Voiture"/>
+
+    <item
+        android:id="@+id/four"
+        android:title="Métro+Tram"/>
+
+</menu>

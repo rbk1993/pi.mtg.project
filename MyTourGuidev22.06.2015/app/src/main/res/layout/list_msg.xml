@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/msg_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#ff4a43bd"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- -->
+    <TextView
+        android:id="@+id/login_msg_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textColor="#ff185d1f"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timestamp_msg_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#ff3f5d5d"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/name_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#ffbd0016"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a113a"
+        android:textStyle="bold" />
+
+    <!-- -->
+    <TextView
+        android:id="@+id/horaire_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a113a"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/duree_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a113a"
+        android:textStyle="bold" />
+
+    <!---->
+
+    <TextView
+        android:id="@+id/admin_id_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/id_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:visibility="gone" />
+    <!---->
+        <TextView
+            android:id="@+id/nombre_membres_max_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    <!---->
+    <TextView
+        android:id="@+id/nombre_membres_inscrits_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/url_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+
+
+    </LinearLayout>

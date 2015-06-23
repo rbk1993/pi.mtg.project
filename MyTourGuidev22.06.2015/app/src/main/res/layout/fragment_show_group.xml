@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color4"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/Informations"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Annuler"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/buttonannuler"
+                            android:layout_toRightOf="@+id/buttondesinscrire"
+                            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                            android:gravity="center"
+                            android:background="@color/onlyon_red"
+                            android:clickable="true" />
+
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Se désinscrire"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/buttondesinscrire"
+                            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                            android:gravity="center"
+                            android:background="@color/onlyon_red"
+                            android:layout_toRightOf="@+id/buttonrejoindre"
+                            android:clickable="true" />
+
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="3dp"
+                            android:text="Rejoindre"
+                            android:id="@+id/buttonrejoindre"
+                            android:textColor="#FFFFFF"
+                            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                            android:background="@color/blueshades_4"
+                            android:clickable="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/titre"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GroupName"
+                        android:textColor="#ff1e2342"
+                        android:typeface="sans"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textColor="#d2192242"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/titre"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textIsSelectable="false" />
+
+                    <TextView
+                        android:id="@+id/horaire"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Horaire"
+                        android:textColor="#d2192242"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/duree"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Durée"
+                        android:textColor="#d2192242"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/nbpersonnes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre de membres inscrits"
+                        android:textColor="#d2192242"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:id="@+id/textmembres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Membres"
+                        android:textColor="#d2192242"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:id="@+id/listViewMembers"
+                        android:layout_gravity="center_horizontal" />
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Programme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff" >
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/listViewPlaces"
+                        android:layout_gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/Mur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/msgListView"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp" />
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:text="Envoyer"
+                        android:id="@+id/button_envoimsg"
+                        android:layout_gravity="right"
+                        android:background="@color/color4"
+                        android:layout_marginTop="30dp"
+                        android:layout_alignParentBottom="true" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:inputType="text"
+                        android:textColor="@color/blueshades_1"
+                        android:hint="Nouveau message"
+                        android:id="@+id/editText_message"
+                        android:background="#ffffffff" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
